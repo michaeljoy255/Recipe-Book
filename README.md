@@ -1,1 +1,38 @@
-# Recipe-Book
+# Recipe Book
+
+Store and convert recipes to PDF.
+
+## Ideas
+
+- Use Vue and Vuetify for the project
+- Store the following for recipes:
+  - Recipe Name
+  - Recipe Image
+  - Ingredients: Array
+  - Categories: Array (Dessert, Soup, Entre, etc.)
+  - Tags: Array (Fast, Easy, Attention Required, etc.)
+  - Prep Time: DateTime
+  - Cook Time: DateTime
+  - Instructions: Array
+  - Step: Object (details of the prep or cook step, maybe even images)
+- Download Recipe PDF
+- Search recipes by: 
+  - Name
+  - Ingredients
+  - Category
+  - Tags
+  - Prep Time
+  - Cook Time
+  
+```typescript
+export interface Recipe {
+  name: string
+  image: string
+  ingredients: string[]
+  categories: string[]
+  tags: string[]
+  prepTime: string
+  cookTime: string
+  instructions: string[]
+}
+```
